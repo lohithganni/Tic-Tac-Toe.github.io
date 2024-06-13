@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css" />
+    <link rel="stylesheet" href="board.css" />
+    <script src="myScript.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header style="display: flex; justify-content: space-between">
+        <img src="images/logo3.png" alt="" class="logo" />
+        <div class="heading">
+          <p style="color: red">Tic&nbsp;</p>
+          <p style="color: rgb(115 19 9)">Tac&nbsp;</p>
+          <p style="color: red">Toe&nbsp;</p>
+        </div>
+      </header>
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-around;
+        "
+      >
+        <div>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              flex-direction: row;
+              align-items: center;
+            "
+          >
+            <input id="player1" type="text" value="player1" />
+            <input id="player2" type="text" value="player2" />
+          </div>
+
+          <p id="text" class="text">click to start</p>
+          <div class="board">
+            <div cellindex="0" class="cell"></div>
+            <div cellindex="1" class="cell"></div>
+            <div cellindex="2" class="cell"></div>
+            <div cellindex="3" class="cell"></div>
+            <div cellindex="4" class="cell"></div>
+            <div cellindex="5" class="cell"></div>
+            <div cellindex="6" class="cell"></div>
+            <div cellindex="7" class="cell"></div>
+            <div cellindex="8" class="cell"></div>
+          </div>
+
+          <button onclick="play()" class="play">play</button>
+        </div>
+        <div class="score-div">
+          <div class="score-heading">
+            <p style="color: white; margin: 0px 20px; text-align: center">
+              Score-Board
+            </p>
+            <button onclick="resetScore()" class="resetButton">
+              reset-score
+            </button>
+          </div>
+          <div id="scoreBoard" class="scoreBoard"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

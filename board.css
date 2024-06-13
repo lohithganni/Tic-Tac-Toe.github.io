@@ -1,0 +1,134 @@
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  height: 540px;
+  width: 540px;
+  margin: 0px auto;
+  justify-content: space-evenly;
+  transition: 0.2s all;
+}
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  width: 170px;
+  height: 170px;
+  margin: 0px;
+  border: 2px solid pink;
+  font-size: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+.text {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(142, 16, 16);
+  margin: 0px;
+  transition: 0.2s all;
+}
+.scoreBoard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  overflow: auto;
+  transition: 0.2s all;
+}
+.playerScore {
+  display: flex;
+  width: 100%;
+}
+.playerName {
+  font-size: 30px;
+  color: white;
+  background-color: rgb(18, 18, 75);
+  border: 2px solid black;
+  padding: 5px 10px;
+  width: 70%;
+  text-align: center;
+  border-radius: 10px;
+}
+.Score {
+  font-size: 30px;
+  color: white;
+  background-color: rgb(11, 11, 110);
+  border: 2px solid black;
+  padding: 5px 10px;
+  width: 30%;
+  text-align: center;
+  border-radius: 10px;
+}
+.score-heading {
+  background-color: rgb(43, 43, 76);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 30px;
+  font-size: 30px;
+}
+.score-div {
+  width: 600px;
+  margin-left: 50px;
+}
+
+@media (max-width: 1220px) {
+  .cell {
+    width: 150px;
+    height: 150px;
+    font-size: 80px;
+  }
+  .board {
+    width: 480px;
+    height: 480px;
+  }
+  .logo {
+    width: 250px;
+  }
+
+  .heading p {
+    font-size: 60px;
+  }
+}
+@media (max-width: 800px) {
+  .cell {
+    width: 100px;
+    height: 100px;
+    font-size: 60px;
+  }
+  .board {
+    width: 330px;
+    height: 330px;
+  }
+  .heading p {
+    font-size: 40px;
+  }
+  .logo {
+    width: 200px;
+  }
+  input {
+    width: 150px;
+    font-size: 24px;
+  }
+  .score-div {
+    width: 500px;
+  }
+  .score-heading {
+    font-size: 20px;
+  }
+  .resetButton {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .logo {
+    width: 180px;
+  }
+  .heading p {
+    font-size: 30px;
+  }
+}
